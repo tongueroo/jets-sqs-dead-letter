@@ -12,7 +12,7 @@ Deploy app:
 
     jets deploy
 
-Grab the generated SQS queue url from from the SQS console. Can test with [aws sqs send-message](https://docs.aws.amazon.com/cli/latest/reference/sqs/send-message.html). Example:
+Grab the generated SQS queue url from the SQS console. Can test with [aws sqs send-message](https://docs.aws.amazon.com/cli/latest/reference/sqs/send-message.html). Example:
 
     QUEUE_URL=https://sqs.us-west-2.amazonaws.com/112233445566/demo-dev-HardJob-T634PZEAVH62-DeliverSqsQueue-47AEDK3P91CV
     aws sqs send-message --queue-url $QUEUE_URL --message-body '{"test": "hello world"}'
