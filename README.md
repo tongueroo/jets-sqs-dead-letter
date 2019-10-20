@@ -1,11 +1,5 @@
-# Jets Project
+# Jets SQS Example with Dead Letter Queue
 
-This README would normally document whatever steps are necessary to get the application up and running.
+* [jobs/hard_job.rb](app/jobs/hard_job.rb)
+* [resources/list.rb](app/shared/resources/list.rb)
 
-Things you might want to cover:
-
-* Dependencies
-* Configuration
-* Database setup
-* How to run the test suite
-* Deployment instructions
