@@ -8,7 +8,8 @@ class HardJob < ApplicationJob
         dead_letter_target_arn: ref(:dead_letter),
         max_receive_count: 3,
     }})
-  def dig
-    puts "done digging"
+  def deliver
+    puts "event #{JSON.dump(event)}"
+    puts "deliver called"
   end
 end
